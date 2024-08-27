@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #8C8581;
+    font-family: "Roboto", "sans-serif";
+}
+
+.container-hangman {
+    display: block;
+    border-radius: 1.5rem;
+    border: 4px solid gray;
+    background-color: #D9D7D7;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5rem 12rem ;
+    gap: 20px
+}
+
+.titulo {
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: "Nunito", sans-serif;
+    color: #4A738C;
+    text-shadow: 
+        1px 1px 0 #FFFFFF;
+}
+
+.content-imagem-forca {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 13rem;
+    width: 14rem;       
+}
+
+.container-btn-novo-jogo {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn-novo-jogo {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 0.5rem;
+    border: 2px solid #8C8581;
+    font-size: 15px;
+    background-color: #BF5B04;
+    transition:all 0.25s
+}
+
+.btn-novo-jogo:hover {
+    transform: scale(1.05);;
+}
+
+.btn-novo-jogo:active {
+    transform: scale(1.0);
+}
+
+.content-letras {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100px;
+    max-width: 400px;
+    align-items: center;
+}
+
+.adivinhe-letras {
+    display: flex;
+    gap: 10px;
+    font-size: 35px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.btn-letras {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-letras button {
+    width: 30px;
+    background-color: #4A738C;
+    border: 1px solid #8C8581;
+    transition:all 0.25s;
+}
+
+button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.dica-letras {
+    font-size: 18px;
+    padding: 5px;
+}
+
+/*-------------------------------------------------stylecss/hangman_start--------------------------------------------------*/ 
+
+.container-hangman-start {
+    display: block;
+    border-radius: 1.5rem;
+    border: 4px solid gray;
+    background-color: #D9D7D7;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem 3rem ;
+    gap: 20px
+}
+
+.subtitulo {
+    text-align: center;
+    padding: 25px 0px 5px;
+    font-family: "Roboto", "sans-serif";
+    color: #FFFFFF;
+}
+
+.container-btn-jogar {
+    display: flex;
+    align-items:baseline;
+    justify-content: center;
+    padding: 1rem;
+}
+
+a {
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+a:active {
+    transform: scale(1.0);
+}
+
+.btn-jogar {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid #8C8581;
+    font-size: 15px;
+    background-color: #BF5B04;
+    transition:all 0.25s;
+}
